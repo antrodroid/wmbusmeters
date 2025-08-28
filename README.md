@@ -102,9 +102,11 @@ based on: https://github.com/fabian-lauer/dbus-shelly-3em-smartmeter
 Installation on Arch Linux:
 ```
 sudo pacman -S wget
+sudo pacman -S unzip
 wget https://github.com/antrodroid/wmbusmeters/archive/refs/heads/master.zip
-unzip master.zip "wmbusmeters/*"
+unzip master.zip
 rm master.zip
+cd wmbusmeters-master
 ./configure
 make
 sudo make install
