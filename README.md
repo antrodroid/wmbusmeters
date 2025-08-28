@@ -96,6 +96,20 @@ from your computer. Then do:
 
 `./configure; make; sudo make install` will install wmbusmeters as a daemon.
 
+Shelly Pro 3EM into Victron DBUS
+based on: https://github.com/fabian-lauer/dbus-shelly-3em-smartmeter
+
+Installation:
+```
+wget https://github.com/antrodroid/wmbusmeters/archive/refs/heads/master.zip
+unzip master.zip "wmbusmeters/*"
+rm master.zip
+./configure
+make
+sudo make install
+```
+
+
 # Usage
 
 Check the contents of your `/etc/wmbusmeters.conf` file, assuming it
