@@ -96,9 +96,6 @@ from your computer. Then do:
 
 `./configure; make; sudo make install` will install wmbusmeters as a daemon.
 
-Shelly Pro 3EM into Victron DBUS
-based on: https://github.com/fabian-lauer/dbus-shelly-3em-smartmeter
-
 Installation on Debian Linux:
 ```
 apt-get install wget
