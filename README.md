@@ -103,7 +103,7 @@ Installation on Debian Linux:
 ```
 apt-get install wget
 apt-get install unzip
-apt-get install gcc
+apt-get install build-essential
 wget https://github.com/antrodroid/wmbusmeters/archive/refs/heads/master.zip
 unzip master.zip
 rm master.zip
