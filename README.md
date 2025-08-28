@@ -101,6 +101,7 @@ Installation on Debian Linux:
 apt-get install wget
 apt-get install unzip
 apt-get install build-essential
+sudo apt install libxml2-dev
 wget https://github.com/antrodroid/wmbusmeters/archive/refs/heads/master.zip
 unzip master.zip
 rm master.zip
@@ -110,6 +111,19 @@ make
 sudo make install
 ```
 
+Driver rtl Installation on Debian Linux:
+```
+sudo apt-get install libusb-1.0-0-dev git cmake pkg-config build-essential
+git clone https://github.com/rtlsdrblog/rtl-sdr-blog
+cd rtl-sdr-blog/
+mkdir build
+cd build
+cmake ../ -DINSTALL_UDEV_RULES=ON
+make
+sudo make install
+sudo cp ../rtl-sdr.rules /etc/udev/rules.d/
+sudo ldconfig
+``` 
 
 # Usage
 
