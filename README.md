@@ -99,8 +99,9 @@ from your computer. Then do:
 Shelly Pro 3EM into Victron DBUS
 based on: https://github.com/fabian-lauer/dbus-shelly-3em-smartmeter
 
-Installation:
+Installation on Arch Linux:
 ```
+sudo pacman -S wget
 wget https://github.com/antrodroid/wmbusmeters/archive/refs/heads/master.zip
 unzip master.zip "wmbusmeters/*"
 rm master.zip
